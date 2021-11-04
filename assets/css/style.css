@@ -3,7 +3,14 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --darkblue:#2a607c;
+    --white:#ffffff;
+    --lightgrey:#d9dcd6;
+    --border-radius:50px;
 
+
+}
 body {
     background-color: #d9dcd6;
 }
@@ -63,4 +70,28 @@ section{
     background-image: url("../images/backgroud-image.jpg"); alt:"background";
     background-size: cover;
     background-position: center;
+}
+
+/* #heriseon{
+    border:1px solid #ddd;
+    border-radius:2px;
+
+    padding:5px;
+    width: 33.3%;
+} */
+.project{
+    padding:50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project img{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
 }
