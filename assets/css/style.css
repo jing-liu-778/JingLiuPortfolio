@@ -1,25 +1,26 @@
+/*use for>*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 :root{
-    --darkblue:#2a607c;
+    --yellow: #e0da7b;
     --white:#ffffff;
     --lightgrey:#d9dcd6;
     --border-radius:50px;
-
-
+    --text:"Roboto",sans-serif;
+    --black:black;
 }
 body {
-    background-color: #d9dcd6;
+    background-color: var(--lightgrey);
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color:  var(--yellow);
+    color: var(--white);
 }
 
 
@@ -41,57 +42,103 @@ nav ul {
     font-size: 20px;
 }
 
-/* nav ul {
-    list-style-type: none;
-} */
+
 
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
+.text-right a {
+    color: var(--white);
     /* remove underline */
      text-decoration: none; 
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+    font-family: var(--text);
+    margin-left: 25px;
 }
 
-section{
-    border: 2px solid black;
-}
+
+/* set background picture in css instead of html*/
 #backgroud{
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/backgroud-image.jpg"); alt:"background";
+    /* margin-bottom: 25px; */
+    background-image: url("../images/images.jpg"); alt:"background";
     background-size: cover;
     background-position: center;
 }
 
-/* #heriseon{
-    border:1px solid #ddd;
-    border-radius:2px;
 
-    padding:5px;
-    width: 33.3%;
-} */
-.project{
+
+.flex-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+h2{
+    background-color: var(--yellow);
+    color:var(--white);
+    /* font-weight:bold; */
+    font-size:25px ;
+    /* font-family: "Roboto",sans-serif; */
+    
+}
+
+.flex-container{
     padding:50px;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-.project img{
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 2px;
-  padding: 10px;
-  flex: 0 0 300px;
-  transform: rotate(8deg);
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
+
+
+.projectImage{
+     width: 400px;
+     height:400px;
+} 
+
+.project-name a {
+    color:var(--black);
+   
+    /* remove underline */
+    text-decoration: none; 
+     font-size: 20px;
+     font-family: var(--text);
+     float:left;
 }
+
+.contact-link a {
+    color: var(--black);
+    /* remove underline */
+     text-decoration: none; 
+     font-size: 20px;
+     font-family: var(--text);
+}
+
+.projectImage:hover{
+    width:500px;
+    height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+   
+    nav 
+    {
+        
+      flex-direction: column;
+    }
+    .project-name,
+    .contact-link{
+        display: flex;
+        flex-direction: column;
+    }
+    
+   #margin {
+       margin-left: 0px;
+   }
+  }
