@@ -1,4 +1,4 @@
-/*use for>*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +8,7 @@
     --yellow: #e0da7b;
     --white:#ffffff;
     --lightgrey:#d9dcd6;
-    --border-radius:50px;
+    --border-radius:5px;
     --text:"Roboto",sans-serif;
     --black:black;
 }
@@ -49,11 +49,6 @@ li {
     margin-left: 25px;
 }
 
-.text-right a {
-    color: var(--white);
-    /* remove underline */
-     text-decoration: none; 
-}
 
 p {
     font-size: 20px;
@@ -61,6 +56,22 @@ p {
     margin-left: 25px;
 }
 
+/*main section title style*/
+h2{
+    background-color: var(--yellow);
+    color:var(--white);
+    
+    font-size:25px ;
+   
+    
+}
+
+/*header navigate bar style*/
+.text-right a {
+    color: var(--white);
+    /* remove underline */
+     text-decoration: none; 
+}
 
 /* set background picture in css instead of html*/
 #backgroud{
@@ -72,22 +83,15 @@ p {
     background-position: center;
 }
 
-
-
+/*set flex box for about me section*/
 .flex-about{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
 }
-h2{
-    background-color: var(--yellow);
-    color:var(--white);
-    /* font-weight:bold; */
-    font-size:25px ;
-    /* font-family: "Roboto",sans-serif; */
-    
-}
+
+/*set flex box for project section */
 
 .flex-container{
     padding:50px;
@@ -96,8 +100,9 @@ h2{
     justify-content: space-around;
 }
 
-
+/*project image styling */
 .projectImage{
+    border-radius: var(--border-radius);
      width: 400px;
      height:400px;
 } 
@@ -120,11 +125,12 @@ h2{
      font-family: var(--text);
 }
 
+/* when mouse move to each project picture, the picture getting bigger */
 .projectImage:hover{
     width:500px;
     height: 500px;
 }
-
+/* responsive funtion, when the web page smaller than 768px, the layout will adapt to the viewpoint */
 @media screen and (max-width: 768px) {
    
     nav 
