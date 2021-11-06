@@ -20,4 +20,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 
-In this project, I have navigate bar, three sections like About Me, Work, Contact information. The navigate bar can link to each section. In the "Work" section, I also set each project name link to the according project images. I use hover selector to present each project image, the image will get larger when the mouse move to the image. Each project image also link to the project website. I use flex box and media query to make the website has reponsive layout. 
+In this project, I have navigate bar, three sections like "About Me", "Work", "Contact". The navigate bar can link to each section. In the "Work" section, I also set each project name link to the according project images. I use hover selector to present each project image, the image will get larger when the mouse move to the image. Each project image also link to the project website. I use flex box and media query to make the website has reponsive layout. git 
