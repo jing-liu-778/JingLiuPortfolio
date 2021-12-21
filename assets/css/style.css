@@ -37,7 +37,6 @@ nav{
 nav ul {
     padding-top: 10px; 
     margin-right: 20px;
-    /* float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -48,7 +47,6 @@ li {
     display: inline-block;
     margin-left: 25px;
 }
-
 
 p {
     font-size: 20px;
@@ -69,7 +67,6 @@ h2{
 /*header navigate bar style*/
 .text-right a {
     color: var(--white);
-    /* remove underline */
      text-decoration: none; 
 }
 
@@ -77,12 +74,24 @@ h2{
 #backgroud{
     height: 800px;
     width: 100%;
-    /* margin-bottom: 25px; */
     background-image: url("../images/images.jpg"); alt:"background";
     background-size: cover;
     background-position: center;
+    position: relative;
 }
-
+.profileImage {
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/35/53/person-icon-female-user-profile-avatar-vector-18833553.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 50px;
+}
+.p-margin {
+    margin: 16px;
+}
 /*set flex box for about me section*/
 .flex-about{
     display: flex;
@@ -92,25 +101,34 @@ h2{
 }
 
 /*set flex box for project section */
-
 .flex-container{
     padding:50px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 /*project image styling */
+.projectImage1 {
+    width:500px;
+    height: 500px;
+}
 .projectImage{
     border-radius: var(--border-radius);
      width: 400px;
-     height:400px;
+     height: 400px;
 } 
+
+/* when mouse move to each project picture, the picture getting bigger */
+.projectImage:hover, .projectImage1:hover{
+    width: 500px;
+    height: 500px;
+    border:  8px solid rgb(30, 223, 88);
+}
 
 .project-name a {
     color:var(--black);
-   
-    /* remove underline */
     text-decoration: none; 
      font-size: 20px;
      font-family: var(--text);
@@ -119,23 +137,15 @@ h2{
 
 .contact-link a {
     color: var(--black);
-    /* remove underline */
-     text-decoration: none; 
-     font-size: 20px;
-     font-family: var(--text);
+    text-decoration: none; 
+    font-size: 20px;
+    font-family: var(--text);
 }
 
-/* when mouse move to each project picture, the picture getting bigger */
-.projectImage:hover{
-    width:500px;
-    height: 500px;
-}
+
 /* responsive funtion, when the web page smaller than 768px, the layout will adapt to the viewpoint */
 @media screen and (max-width: 768px) {
-   
-    nav 
-    {
-        
+    nav {
       flex-direction: column;
     }
     .project-name,
@@ -143,7 +153,6 @@ h2{
         display: flex;
         flex-direction: column;
     }
-    
    #margin {
        margin-left: 0px;
    }
