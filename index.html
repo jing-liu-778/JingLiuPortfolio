@@ -15,7 +15,7 @@
                     <li id ="margin"><a href ="#about-me">About Me</a></li>
                     <li><a href ="#work">Work</a></li>
                     <li><a href ="#contact-me">Contact Me</a></li>
-                    
+                    <li><a href ="./assets/_Jing Liu's Resume.pdf" download>Resume</a></li>
                 </ul>
 
             </nav>
@@ -24,41 +24,74 @@
             <span class="profileImage"></span>
         </div>
         <main>
-            <section class ="flex-about"> 
+            <section class="flex-box"> 
                
-               <h2 id="about-me">About Me</h2> 
-               <p class="p-margin">
-                   I am a highly-motivated, diligent and reliable individual with a solid academic background in Electrical & Computer Engineering. Solutions oriented and competent technical professional in electronic design, system testing, and software testing. Familiar with IEEE/IEC Standards and Nuclear Regulatory Commission Regulatory Guidelines. Proficient in programming and Microsoft Office applications. Excellent communication, interpersonal and organizational skills. Strong sense of responsibility and team spirit.
+               <h2 id="about-me" class="header">About Me</h2> 
+               
+               <p class="p-margin flex flex-about ">
+                   I am a highly-motivated, diligent and reliable individual with a solid academic background in Electrical & Computer Engineering. Solutions oriented and competent technical professional in electronic design, system testing, and software testing. 
+                   <br><br>Familiar with IEEE/IEC Standards and Nuclear Regulatory Commission Regulatory Guidelines. Proficient in programming and Microsoft Office applications. Excellent communication, interpersonal and organizational skills. Strong sense of responsibility and team spirit.
                </p>
             </section>
-            <section>
-                <h2 id="work">Work</h2>
-                <ul class="project-name">
+            <section class="flex-box">
+                <h2 id="work" class="header">Work</h2>
+                <!-- <ul class="project-name">
                     <li><a href ="#heriseon">Heriseon</a></li>
                     <li><a href ="#mimitale">Mimitale</a></li>
                     <li><a href ="#project3">Project 3</a></li>
                     
-                </ul>
-                <div class ="flex-container">
-                    <a href ="https://jing-liu-778.github.io/02-Marketing_Agency/#search-engine-optimization">
-                        <img id ="heriseon" class ="projectImage1" src="./assets/images/screenshot-1.png" alt ="Heriseon project">
-                    </a>
-                    <a href="https://mimitale.com/login">
-                        <img id ="mimitale" class ="projectImage" src="./assets/images/screenshot-2.png" alt ="Mimitale project">
-                    </a>
-                    <a href ="#"> 
-                        <img  id ="project3" class ="projectImage" src="./assets/images/screenshot-3.png" alt ="project 3">
-                    </a>
+                </ul> -->
+                <div class ="flex flex-container">
+                    <div class="flex-column">
+
+                        <a href ="https://jing-liu-778.github.io/Disaster-Factor/" class="container">
+                            <img id ="disaster-factor" class ="projectImage1" src="./assets/images/Disaster_Factor.png" alt ="disaster-factor project">
+                            <div class="text-block">
+                                <h4>Disater Factor</h4>
+                                
+                                <p>JavaScript/CSS/HTML</p>
+                            </div>
+                            
+                        </a>
+                        <a href="https://github.com/jing-liu-778/Disaster-Factor" class="link-color">https://github.com/jing-liu-778/Disaster-Factor</a>
+                    </div>
+                   
+                    <div class="flex-row ">
+                        <div class="flex-column">
+                            <a href="https://mimitale.com/login" class="container">
+                                <img id ="mimitale"  class="projectImage space-right" src="./assets/images/screenshot-2.png" alt ="Mimitale project">
+                                <div class="text-block">
+                                    <h4>Mimitale</h4>
+                                    <p>React/JavaScript/CSS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-column">
+                            <a href ="https://jing-liu-778.github.io/Code-Quiz/" class="container"> 
+                                <img  id ="project3"   class="projectImage space-left" src="./assets/images/Code_Quiz.png" alt ="code-quiz project">
+                                <div class="text-block-2">
+                                    <h4>Code Quiz</h4>
+                                    <p>JavaScript/CSS/HTML</p>
+                                </div> 
+                                
+                                
+                            </a>
+                           <a href="https://github.com/jing-liu-778/Code-Quiz" class="link-color">https://github.com/jing-liu-778/Code-Quiz</a>
+                        </div>
+                        
+                    </div>
+                    
                    
                 </div>
             </section>
             
-            <section>
-                <h2 id ="contact-me">Contact Me</h2>
-                <ul class ="contact-link">
+            <section class="flex-box">
+                <h2 id ="contact-me" class="header">Contact Me</h2>
+                <ul class ="contact-link flex flex-contact">
+                    <li class="phone">201.888.2635</li>
                     <li> 
                         
-                        <a href="mailto:jingliu778@gmail.com" >Email</a>
+                        <a href="mailto:jingliu778@gmail.com" >jingliu778@gmail.com</a>
                     </li>
                     <li>
                         <a href="https://github.com/jing-liu-778" >Github</a>
