@@ -114,13 +114,19 @@ a:link, a:visited {
     position: absolute;
     background-color: var(--yellow-8);
     color: var(--black);
-    bottom: 20px;
+    bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
     width: 300px;
-    height: 50px;
+    z-index: 100;
+    cursor:pointer;
 }
-
+.insidelink {
+    font-size: 12px;
+}
+.text-block:hover {
+    border: 3px solid lightblue;
+}
 /*project image styling */
 .link-image-wrapper-lg {
     position: relative;
