@@ -169,8 +169,9 @@ a:link, a:visited {
     margin-left: 5px;
 }
 /* when mouse move to each project picture, the picture getting bigger */
-.container:hover, .projectImage1:hover {
+.container:hover, .projectImage1:hover, .linkImage:hover {
     border:  8px solid var(--yellow);
+    opacity: 1;
 }
 .footer-space {
     margin-bottom: 48px;
@@ -227,6 +228,7 @@ a:link, a:visited {
     nav {
       flex-direction: column;
     }
+
     .project-name,
     .contact-link{
         display: flex;
